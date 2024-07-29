@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-
+import time
 from django.utils.text import slugify
 from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
@@ -73,6 +73,6 @@ class PostComment(models.Model):
 
 	@property
 	def created_dynamic(self):
-		now = timezone.now()
+		now = time.now()
 		return now
 	

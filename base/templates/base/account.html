@@ -11,7 +11,17 @@
 		margin:0 auto;
 		object-fit: cover;
 	}
-
+	.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    align-items: center;
+    justify-content: center;
+}
 	#user-info-box{
 		text-align: center;
 	}
@@ -32,7 +42,7 @@
 				<a class="btn btn-info btn-block" href="{% url 'update_profile' %}">Edit Profile</a>
 			</div>
 		</div>
-		<div class="col-md-8">
+		<!-- <div class="col-md-8">
 			<div class="card card-body">
 				<h3>My Orders:</h3>
 				<hr>
@@ -63,7 +73,7 @@
 					</tr>
 				</table>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
 
