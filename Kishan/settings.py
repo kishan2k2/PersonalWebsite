@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -62,7 +63,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'dennisivy.urls'
+ROOT_URLCONF = 'Kishan.urls'
 
 TEMPLATES = [
     {
@@ -82,7 +83,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'dennisivy.wsgi.application'
+WSGI_APPLICATION = 'Kishan.wsgi.application'
 
 
 # Database
@@ -150,8 +151,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = "commonmailkishanandamar@gmail.com"
-EMAIL_HOST_PASSWORD = 'htdp dwpk gpeo pwrl'
-
+EMAIL_HOST_PASSWORD = os.getenv('pwd')
 
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 
