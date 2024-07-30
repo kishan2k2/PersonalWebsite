@@ -1,1 +1,1 @@
-web: gunicorn kishan.wsgi --log-file -
+web: gunicorn Kishan.wsgi --log-file -
