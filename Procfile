@@ -1,1 +1,1 @@
-web: gunicorn dennisivy.wsgi --log-file -
+web: gunicorn kishan.wsgi --log-file -
