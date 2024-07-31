@@ -83,7 +83,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Kishan.wsgi.application'
+WSGI_APPLICATION = 'Kishan.wsgi.app'
 
 
 # Database
