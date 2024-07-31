@@ -126,7 +126,7 @@ def sendEmail(request):
 
 		email.fail_silently=False
 		email.send()
-
+ 
 	return render(request, 'base/email_sent.html')
 
 def loginPage(request):
