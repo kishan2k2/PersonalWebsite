@@ -13,6 +13,7 @@ jmespath
 pillow
 python-dotenv
 psycopg2-binary
+<<<<<<< HEAD
 python-dateutil
 pytz
 s3transfer
@@ -20,3 +21,12 @@ six
 sqlparse
 urllib3
 whitenoise
+=======
+python-dateutil==2.8.1
+pytz==2020.1
+s3transfer==0.3.3
+six==1.15.0
+sqlparse==0.3.1
+urllib3==1.25.10
+whitenoise==5.1.0
+>>>>>>> parent of 68e88ec (dotenv)
